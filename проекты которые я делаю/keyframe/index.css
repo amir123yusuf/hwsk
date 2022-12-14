@@ -1,0 +1,64 @@
+@keyframes transformation {
+    0% {
+      border-radius: 50%;
+      background-position: 25% 0%;
+      transform: skew(0deg) rotate(0deg);
+      width: 200px;
+      height: 200px;
+    }
+    17% {
+      border-radius: 0;
+      background-position: 25% 0%;
+      transform: skew(0deg) rotate(0deg);
+      width: 200px;
+      height: 200px;
+    } 
+    33% {
+      border-radius: 0;
+      background-position: 75% 0%;
+      transform: skew(0deg) rotate(0deg);
+      width: 200px;
+      height: 200px;
+    }
+    50% {
+      border-radius: 0;
+      background-position: 75% 0%;
+      width: 300px;
+      height: 300px;
+      transform: skew(15deg) rotate(0deg);
+    }
+    67% {
+      border-radius: 0;
+      background-position: 75% 0%;
+      width: 300px;
+      height: 300px;
+      transform: skew(15deg) rotate(360deg);
+    }
+    83% {
+      border-radius: 0;
+      background-position: 25% 0%;
+      width: 300px;
+      height: 300px;
+      transform: skew(15deg) rotate(360deg);
+    }
+    100% {
+      border-radius: 50%;
+      background-position: 25% 0%;
+      transform: skew(0deg) rotate(360deg);
+      width: 200px;
+      height: 200px;
+    }
+  } 
+  
+  .animation-item {
+    width: 200px;
+    height: 200px;
+    background: linear-gradient(to right, #a770ef 25%, #1426c5 50%, #d3521b 75%);
+    background-size: 300% 300%;
+    background-position: 25% 0%;
+    border-radius: 50%;
+    animation-name: transformation;
+    animation-iteration-count: infinite;
+    animation-duration: 14s;
+    animation-fill-mode: forwards; 
+  }
